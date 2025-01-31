@@ -1,0 +1,7 @@
+using System.Collections.Generic;
+
+public class Solution {
+    public bool ContainsDuplicate(int[] nums) {
+        return nums.Length != new Hashset<int>(nums).Count;
+    }
+}
