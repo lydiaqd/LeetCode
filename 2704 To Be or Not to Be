@@ -2,13 +2,14 @@
  * @param {string} val
  * @return {Object}
  */
+
 var expect = function(val) {
     let object = {
         toBe: function(arg1) {
             if (val === arg1){
                 return true
             } else {
-                return "Not Equal"
+                throw new Error("Not Equal")
             }
         },
 
@@ -16,11 +17,12 @@ var expect = function(val) {
             if (val !== arg2){
                 return true
             } else {
-                return "Equal"
+                throw new Error("Equal")
             }
      }
     };
 return object
+}
 
 /**
  * expect(5).toBe(5); // true
