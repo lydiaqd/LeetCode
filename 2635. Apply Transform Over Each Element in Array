@@ -5,8 +5,8 @@
  */
 var map = function(arr, fn) {
     const newArray = [];
-    
-    for each item in array, transform it with fn.
-    Push the result to newArray.
-    Return newArray.
+
+    newArray.push(arr.forEach(fn));
+
+    return newArray;
 };
