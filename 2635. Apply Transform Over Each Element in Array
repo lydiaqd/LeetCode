@@ -1,0 +1,12 @@
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+var map = function(arr, fn) {
+    const newArray = [];
+    
+    for each item in array, transform it with fn.
+    Push the result to newArray.
+    Return newArray.
+};
