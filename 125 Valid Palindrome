@@ -3,9 +3,19 @@
  * @return {boolean}
  */
 var isPalindrome = function(s) {
-    const myArray = s.split("");
+    s.toLowerCase();
+    let newString = s.split("");
+    let reversedString = newString.reverse();
+    let reversedWord = reversedString.join("");
+
+    if (reversedWord = s) {
+        return true
+    } else {
+        return false
+    }
+
 };
 
 //String to array
-//Iterate through Array
-//Compare first and last items in array
+//Reverse original array and add to new array
+//Compare original array with new array
