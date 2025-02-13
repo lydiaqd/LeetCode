@@ -1,0 +1,11 @@
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isPalindrome = function(s) {
+    const myArray = s.split("");
+};
+
+//String to array
+//Iterate through Array
+//Compare first and last items in array
