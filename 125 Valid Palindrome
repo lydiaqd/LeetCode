@@ -3,17 +3,18 @@
  * @return {boolean}
  */
 var isPalindrome = function(s) {
-    s.toLowerCase();
-    let newString = s.split("");
+    let lowerCase = s.toLowerCase();
+    let removeSpecial = lowerCase.replace(/[^a-zA-Z0-9]/g, '');
+    let newString = removeSpecial.split("");
     let reversedString = newString.reverse();
     let reversedWord = reversedString.join("");
 
-    if (reversedWord = s) {
+    if (str === null) {return true
+    } else if (reversedWord == s) {
         return true
     } else {
         return false
     }
-
 };
 
 //String to array
