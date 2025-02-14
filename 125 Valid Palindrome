@@ -11,12 +11,14 @@ var isPalindrome = function(s) {
 
     console.log(reversedWord)
 
-    if (reversedWord === "") {return true
-    } else if (reversedWord == s) {
-        return true
-    } else {
-        return false
+    if (reversedWord === "")     
+    
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str.charAt(i) !== str.charAt(str.length - 1 - i)) {
+            return false
+        }
     }
+    return true
 };
 
 //String to array
