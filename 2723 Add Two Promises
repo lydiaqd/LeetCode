@@ -4,9 +4,7 @@
  * @return {Promise}
  */
 var addTwoPromises = async function (promise1, promise2) {
-    const [value1, value2]
-
-    Promise.all([value1, value2]).then(values)
+    return Promise.all([promise1, promise2]).then(value => value.reduce((accumulator, value) => accumulator+value,0))
 };
 
 /**
