@@ -6,11 +6,15 @@
  */
  
 var reduce = function(nums, fn, init) {
-    if array length = 0
-    return init
-    else
 
-    for array.length 
-    add nums
+    let res = fn(init, nums[0])
+
+    if (nums.length = 0) {
     return init
+    } else {
+        for(let i=0;i<nums.length;i++) {
+        res = fn(res, nums[i])
+    }
+    return res
+    }
 };
